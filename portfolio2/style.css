@@ -3,10 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #d4a8e3;
 }
 header {
-    background: #333;
+    background: #b495cb;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -16,14 +16,14 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #444;
+    background: #e8d3ec;
 }
 nav ul li {
     margin: 0 15px;
 }
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(187, 133, 203);
     font-weight: bold;
 }
 section {
@@ -44,7 +44,41 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
+    background: #b495cb;
     color: white;
     margin-top: 20px;
+}
+#profile{
+    border-radius:50%;
+    width:200px;
+    height:200px;
+}
+#link{
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    margin-top:10px;
+}
+#lin{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+#git{
+    border-radius:50%;
+    width:25px;
+    height:25px;
+    margin-top:10px;
+}
+#mail{
+    border-radius:50%;
+    width:45px;
+    height:30px;
+    margin-top:10px;
+}
+#leet{
+    border-radius:50%;
+    width:40px;
+    height:30px;
+    margin-top:10px;
 }
