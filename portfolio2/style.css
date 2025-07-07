@@ -3,37 +3,49 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #d4a8e3;
+    color: #663399; /* Better contrast than #d4a8e3 */
 }
+
 header {
     background: #b495cb;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     background: #e8d3ec;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: rgb(187, 133, 203);
     font-weight: bold;
 }
+
+nav ul li a:hover {
+    color: #6a1b9a;
+    text-decoration: underline;
+}
+
 section {
     padding: 20px;
     text-align: center;
     background: white;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .project {
     background: #eee;
     padding: 10px;
@@ -41,6 +53,7 @@ section {
     width: 80%;
     border-radius: 5px;
 }
+
 footer {
     text-align: center;
     padding: 10px;
@@ -48,37 +61,56 @@ footer {
     color: white;
     margin-top: 20px;
 }
-#profile{
-    border-radius:50%;
-    width:200px;
-    height:200px;
+
+#profile {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
-#link{
-    border-radius:50%;
-    width:30px;
-    height:30px;
-    margin-top:10px;
-}
-#lin{
-    display:flex;
-    gap:10px;
+
+#lin {
+    display: flex;
+    gap: 10px;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
-#git{
-    border-radius:50%;
-    width:25px;
-    height:25px;
-    margin-top:10px;
+
+/* Social icons */
+#link, #git, #mail, #leet {
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
 }
-#mail{
-    border-radius:50%;
-    width:45px;
-    height:30px;
-    margin-top:10px;
+
+#link {
+    width: 30px;
+    height: 30px;
 }
-#leet{
-    border-radius:50%;
-    width:40px;
-    height:30px;
-    margin-top:10px;
+
+#git {
+    width: 25px;
+    height: 25px;
 }
+
+#mail {
+    width: 45px;
+    height: 30px;
+}
+
+#leet {
+    width: 40px;
+    height: 30px;
+}
+
+/* Optional responsiveness */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 95%;
+    }
+}
+
